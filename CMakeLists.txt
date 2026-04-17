@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.4)
+cmake_minimum_required(VERSION 3.5)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -62,3 +62,6 @@ add_subdirectory(banking)
 include(CPackConfig.cmake)
 
 add_subdirectory(solver)
+
+# Disable CPack for root when building subprojects
+set(CPACK_GENERATOR "" CACHE STRING "Disable root packaging")
