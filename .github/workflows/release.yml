@@ -54,10 +54,6 @@ jobs:
         with:
           name: solver-msi
           path: _build/*.msi
-        uses: actions/upload-artifact@v4
-        with:
-          name: solver-msi
-          path: _build/*.msi
   macos-dmg:
     runs-on: macos-latest
     steps:
