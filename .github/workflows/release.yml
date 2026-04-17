@@ -44,7 +44,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Configure
-        run: cmake -H. -B_bbuild -DCMAKE_BUILD_TYPE=Release
+        run: cmake -H. -B_build -DCMAKE_BUILD_TYPE=Release
       - name: Build
         run: cmake --build _build --config Release
       - name: Package MSI
